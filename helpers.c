@@ -15,10 +15,21 @@ bool search(int value, int values[], int n)
 {
     if (n<1)
       return false;
-
-    if (value==values[n/2])
+    while (n>1)
     {
-
+      if (value==values[n/2])
+      {
+        return true;
+      }
+      else if(value<values[n/2])
+      {
+        n=n/2;
+        search(value, values[], n);
+      }
+      else
+      {
+        values[n/2]=
+      }
     }
     return false;
 }
