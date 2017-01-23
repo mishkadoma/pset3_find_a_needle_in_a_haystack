@@ -16,9 +16,10 @@ bool search(int value, int values[], int n)
     if (n<1)
       return false;
     int start_point = 0;
-    int center = (start_point+(n-1))/2
+    int center = (start_point+(n-1))/2;
     while (center>start_point)
     {
+      center = (start_point+(n-1))/2;
       if (value==values[center])
       {
         return true;
@@ -26,12 +27,12 @@ bool search(int value, int values[], int n)
       else if(value<values[center])
       {
         n = center;
-        search(value, values[], n);
+        search(value, values, n);
       }
       else
       {
         start_point=center++;
-        search(value, values[], n);
+        search(value, values, n);
       }
     }
     return false;
