@@ -3,7 +3,7 @@
  *
  * Helper functions for Problem Set 3.
  */
- 
+
 #include <cs50.h>
 
 #include "helpers.h"
@@ -13,7 +13,13 @@
  */
 bool search(int value, int values[], int n)
 {
-    // TODO: implement a searching algorithm
+    if (n<1)
+      return false;
+
+    if (value==values[n/2])
+    {
+
+    }
     return false;
 }
 
