@@ -15,20 +15,23 @@ bool search(int value, int values[], int n)
 {
     if (n<1)
       return false;
-    while (n>1)
+    int start_point = 0;
+    int center = (start_point+(n-1))/2
+    while (center>start_point)
     {
-      if (value==values[n/2])
+      if (value==values[center])
       {
         return true;
       }
-      else if(value<values[n/2])
+      else if(value<values[center])
       {
-        n=n/2;
+        n = center;
         search(value, values[], n);
       }
       else
       {
-        values[n/2]=
+        start_point=center++;
+        search(value, values[], n);
       }
     }
     return false;
