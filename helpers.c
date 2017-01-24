@@ -56,6 +56,7 @@ bool search(int value, int values[], int n)
 /**
  * Sorts array of n values.
  */
+ //bubble sorting
 void sort(int values[], int n)
 {
   int swap_counter = 0;
@@ -69,6 +70,7 @@ void sort(int values[], int n)
       values[i+1] = helper_byte;
       swap_counter++;
     }
+
   }
     return;
 }
