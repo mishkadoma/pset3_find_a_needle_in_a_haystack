@@ -61,16 +61,16 @@ void sort(int values[], int n)
 {
   int swap_counter = 0;
   int helper_byte;
-  for (int i=0; i<n-2; i++);
-  {
-    if (values[i]>values[i+1])
+  while ()
+    for (int i=0; i<n-2; i++);
     {
-      helper_byte = values[i];
-      values[i] = values[i+1];
-      values[i+1] = helper_byte;
-      swap_counter++;
+      if (values[i]>values[i+1])
+      {
+        helper_byte = values[i];
+        values[i] = values[i+1];
+        values[i+1] = helper_byte;
+        swap_counter++;
+      }
     }
-
-  }
     return;
 }
