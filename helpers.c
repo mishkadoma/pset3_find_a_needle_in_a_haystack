@@ -48,8 +48,6 @@ bool search(int value, int values[], int n)
   {
     if (value == values[i])
       return true;
-    else
-      return false;
   }
   return false;
 }
@@ -73,7 +71,6 @@ void sort(int values[], int n)
         values[i] = values[i+1];
         values[i+1] = helper_byte;
         swap_counter++;
-        printf("%d", values[i]);
       }
     }
   }
