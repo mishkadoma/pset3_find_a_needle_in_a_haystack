@@ -73,7 +73,7 @@ void sort(int values[], int n)
         values[i] = values[i+1];
         values[i+1] = helper_byte;
         swap_counter++;
-        printf("%i", atoi(values[i]));
+        printf("%d", values[i]);
       }
     }
   }
