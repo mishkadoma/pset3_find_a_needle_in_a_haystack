@@ -20,21 +20,12 @@ bool search(int value, int values[], int n)
     int center = (start_point + n) / 2;
     while (center >= start_point)
     {
-      center = (start_point + n) / 2;
       if (value == values[center])
-      {
         return true;
-      }
       else if (value < values[center])
-      {
         n = center-1;
-        search(value, values, n);
-      }
       else
-      {
         start_point = center+1;
-        search(value, values, n);
-      }
     }
     return false;
 }
@@ -74,4 +65,5 @@ void sort(int values[], int n)
       }
     }
   }
+  printf("%c", (char)values);
 }
